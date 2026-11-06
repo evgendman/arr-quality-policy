@@ -1,0 +1,282 @@
+# Static Recyclarr instance config; scores target an existing RU profile.
+sonarr:
+  mini_sonarr_1080p:
+    base_url: http://127.0.0.1:8989
+    api_key: !secret sonarr_1080p_api_key
+    delete_old_custom_formats: false
+    custom_formats:
+      - trash_ids:
+          - "arrqp-sonarr-voice-alexfilm"  # Voice - AlexFilm
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 1500
+      - trash_ids:
+          - "arrqp-sonarr-voice-amedia"  # Voice - Amedia
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 2000
+      - trash_ids:
+          - "arrqp-sonarr-voice-amediateka"  # Voice - Amediateka
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 2900
+      - trash_ids:
+          - "arrqp-sonarr-voice-baibako"  # Voice - BaibaKo
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 2500
+      - trash_ids:
+          - "arrqp-sonarr-voice-coldfilm"  # Voice - ColdFilm
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-fox-fox-life"  # Voice - FOX / Fox Life
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-sonarr-voice-focusstudio"  # Voice - FocusStudio
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-gears-media"  # Voice - Gears Media
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-goldteam"  # Voice - GoldTeam
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-hdrezka"  # Voice - HDRezka
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 8000
+      - trash_ids:
+          - "arrqp-sonarr-voice-hamsterstudio"  # Voice - HamsterStudio
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-ideafilm"  # Voice - IdeaFilm
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-jaskier"  # Voice - Jaskier
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 2800
+      - trash_ids:
+          - "arrqp-sonarr-voice-kravec"  # Voice - Kravec
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 3000
+      - trash_ids:
+          - "arrqp-sonarr-voice-le-production"  # Voice - LE-Production
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 2900
+      - trash_ids:
+          - "arrqp-sonarr-voice-linefilm"  # Voice - LineFilm
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-lostfilm"  # Voice - LostFilm
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 5000
+      - trash_ids:
+          - "arrqp-sonarr-voice-moviedalen"  # Voice - MovieDalen
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9200
+      - trash_ids:
+          - "arrqp-sonarr-voice-newstudio"  # Voice - NewStudio
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 4000
+      - trash_ids:
+          - "arrqp-sonarr-voice-novafilm"  # Voice - NovaFilm
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 1000
+      - trash_ids:
+          - "arrqp-sonarr-voice-novamedia"  # Voice - NovaMedia
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 600
+      - trash_ids:
+          - "arrqp-sonarr-voice-omskbird-records"  # Voice - OMSKBIRD records
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-sonarr-voice-red-head-sound"  # Voice - Red Head Sound
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9000
+      - trash_ids:
+          - "arrqp-sonarr-voice-russian-dubbing"  # Voice - Russian Dubbing
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100000
+      - trash_ids:
+          - "arrqp-sonarr-voice-sdi-media"  # Voice - SDI Media
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-sonarr-voice-sunshine-studio"  # Voice - Sunshine Studio
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 50
+      - trash_ids:
+          - "arrqp-sonarr-voice-tv-ntv"  # Voice - TV - НТВ
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-sonarr-voice-tv-ort"  # Voice - TV - ОРТ
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-sonarr-voice-tv-rtr"  # Voice - TV - РТР
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-sonarr-voice-tv-rentv"  # Voice - TV - РенТВ
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-sonarr-voice-tv-tv3"  # Voice - TV - ТВ3
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-sonarr-voice-tvshows"  # Voice - TVShows
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 6000
+      - trash_ids:
+          - "arrqp-sonarr-voice-winmedia"  # Voice - WinMedia
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9100
+      - trash_ids:
+          - "arrqp-sonarr-voice-itunes"  # Voice - iTunes
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9290
+      - trash_ids:
+          - "arrqp-sonarr-voice-kubik-v-kube"  # Voice - Кубик в Кубе
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 7000
+      - trash_ids:
+          - "arrqp-sonarr-voice-kurazh-bambey"  # Voice - Кураж-Бамбей
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-mosfilm-master"  # Voice - Мосфильм-Мастер
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9500
+      - trash_ids:
+          - "arrqp-sonarr-voice-nevafilm"  # Voice - Невафильм
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9300
+      - trash_ids:
+          - "arrqp-sonarr-voice-pifagor"  # Voice - Пифагор
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 9400
+      - trash_ids:
+          - "arrqp-sonarr-voice-taykun"  # Voice - Тайкун
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-sonarr-voice-zakadry"  # Voice - заКадры
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-sonarr-src-bluray-bdrip"  # Src-Bluray-BDRip
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 120000
+      - trash_ids:
+          - "arrqp-sonarr-src-bluray-remux"  # Src-Bluray-Remux
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 60000
+      - trash_ids:
+          - "arrqp-sonarr-src-bluray-disk-title"  # Src-Bluray-Disk-Title
+        assign_scores_to:
+          - name: "1080p RU"
+            score: -1000000
+      - trash_ids:
+          - "arrqp-sonarr-src-dvd"  # Src-DVD
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 0
+      - trash_ids:
+          - "arrqp-sonarr-src-dvd-disk"  # Src-DVD-Disk
+        assign_scores_to:
+          - name: "1080p RU"
+            score: -1000000
+      - trash_ids:
+          - "arrqp-sonarr-src-hdtv-sdtv"  # Src-HDTV/SDTV
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 80000
+      - trash_ids:
+          - "arrqp-sonarr-src-web-dl"  # Src-WEB-DL
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 140000
+      - trash_ids:
+          - "arrqp-sonarr-src-webrip"  # Src-WEBRip
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 100000
+      - trash_ids:
+          - "arrqp-sonarr-format-hdr"  # Format-HDR
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 125
+      - trash_ids:
+          - "arrqp-sonarr-format-hdr10"  # Format-HDR10
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 1000
+      - trash_ids:
+          - "arrqp-sonarr-format-hdr10-plus"  # Format-HDR10+
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 2000
+      - trash_ids:
+          - "arrqp-sonarr-format-dolbyvision"  # Format-DolbyVision
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-sonarr-format-dv8-1"  # Format-DV8.1
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 3500
+      - trash_ids:
+          - "arrqp-sonarr-extra-hevc-h-265"  # Extra-HEVC / H.265
+        assign_scores_to:
+          - name: "1080p RU"
+            score: 0

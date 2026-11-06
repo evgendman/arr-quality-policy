@@ -1,0 +1,287 @@
+# Static Recyclarr instance config; scores target an existing RU profile.
+radarr:
+  mini_radarr_1080p:
+    base_url: http://127.0.0.1:7878
+    api_key: !secret radarr_1080p_api_key
+    delete_old_custom_formats: false
+    custom_formats:
+      - trash_ids:
+          - "arrqp-radarr-extra-hevc-h-265"  # Extra-HEVC / H.265
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 0
+      - trash_ids:
+          - "arrqp-radarr-extra-theatrical"  # Extra-Theatrical
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 50
+      - trash_ids:
+          - "arrqp-radarr-format-dv8-1"  # Format-DV8.1
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 3500
+      - trash_ids:
+          - "arrqp-radarr-format-dolbyvision"  # Format-DolbyVision
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-radarr-format-hdr"  # Format-HDR
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 125
+      - trash_ids:
+          - "arrqp-radarr-format-hdr10"  # Format-HDR10
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 1000
+      - trash_ids:
+          - "arrqp-radarr-format-hdr10-plus"  # Format-HDR10+
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 2000
+      - trash_ids:
+          - "arrqp-radarr-src-bluray-bdrip"  # Src-Bluray-BDRip
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 120000
+      - trash_ids:
+          - "arrqp-radarr-src-bluray-disk"  # Src-Bluray-Disk
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 0
+      - trash_ids:
+          - "arrqp-radarr-src-bluray-disk-title"  # Src-Bluray-Disk-Title
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: -1000000
+      - trash_ids:
+          - "arrqp-radarr-src-bluray-remux"  # Src-Bluray-Remux
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 60000
+      - trash_ids:
+          - "arrqp-radarr-src-dvd-disk"  # Src-DVD-Disk
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: -1000000
+      - trash_ids:
+          - "arrqp-radarr-src-hdtv-sdtv"  # Src-HDTV/SDTV
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 80000
+      - trash_ids:
+          - "arrqp-radarr-src-web-dl"  # Src-WEB-DL
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 140000
+      - trash_ids:
+          - "arrqp-radarr-src-webrip"  # Src-WEBRip
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100000
+      - trash_ids:
+          - "arrqp-radarr-voice-alexfilm"  # Voice - AlexFilm
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 1500
+      - trash_ids:
+          - "arrqp-radarr-voice-amedia"  # Voice - Amedia
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 2000
+      - trash_ids:
+          - "arrqp-radarr-voice-amediateka"  # Voice - Amediateka
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 2900
+      - trash_ids:
+          - "arrqp-radarr-voice-baibako"  # Voice - BaibaKo
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 2500
+      - trash_ids:
+          - "arrqp-radarr-voice-coldfilm"  # Voice - ColdFilm
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-fox-fox-life"  # Voice - FOX / Fox Life
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-radarr-voice-focusstudio"  # Voice - FocusStudio
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-gears-media"  # Voice - Gears Media
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-goldteam"  # Voice - GoldTeam
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-hdrezka"  # Voice - HDRezka
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 8000
+      - trash_ids:
+          - "arrqp-radarr-voice-hamsterstudio"  # Voice - HamsterStudio
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-ideafilm"  # Voice - IdeaFilm
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-jaskier"  # Voice - Jaskier
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 2800
+      - trash_ids:
+          - "arrqp-radarr-voice-kravec"  # Voice - Kravec
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 3000
+      - trash_ids:
+          - "arrqp-radarr-voice-le-production"  # Voice - LE-Production
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 2900
+      - trash_ids:
+          - "arrqp-radarr-voice-linefilm"  # Voice - LineFilm
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-lostfilm"  # Voice - LostFilm
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 5000
+      - trash_ids:
+          - "arrqp-radarr-voice-moviedalen"  # Voice - MovieDalen
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9200
+      - trash_ids:
+          - "arrqp-radarr-voice-newstudio"  # Voice - NewStudio
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 4000
+      - trash_ids:
+          - "arrqp-radarr-voice-novafilm"  # Voice - NovaFilm
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 1000
+      - trash_ids:
+          - "arrqp-radarr-voice-novamedia"  # Voice - NovaMedia
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 600
+      - trash_ids:
+          - "arrqp-radarr-voice-omskbird-records"  # Voice - OMSKBIRD records
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-radarr-voice-red-head-sound"  # Voice - Red Head Sound
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9000
+      - trash_ids:
+          - "arrqp-radarr-voice-russian-dubbing"  # Voice - Russian Dubbing
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100000
+      - trash_ids:
+          - "arrqp-radarr-voice-sdi-media"  # Voice - SDI Media
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 500
+      - trash_ids:
+          - "arrqp-radarr-voice-sunshine-studio"  # Voice - Sunshine Studio
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 50
+      - trash_ids:
+          - "arrqp-radarr-voice-tv-ntv"  # Voice - TV - НТВ
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-radarr-voice-tv-ort"  # Voice - TV - ОРТ
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-radarr-voice-tv-rtr"  # Voice - TV - РТР
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-radarr-voice-tv-rentv"  # Voice - TV - РенТВ
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-radarr-voice-tv-tv3"  # Voice - TV - ТВ3
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 400
+      - trash_ids:
+          - "arrqp-radarr-voice-tvshows"  # Voice - TVShows
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 6000
+      - trash_ids:
+          - "arrqp-radarr-voice-winmedia"  # Voice - WinMedia
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9100
+      - trash_ids:
+          - "arrqp-radarr-voice-itunes"  # Voice - iTunes
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9290
+      - trash_ids:
+          - "arrqp-radarr-voice-kubik-v-kube"  # Voice - Кубик в Кубе
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 7000
+      - trash_ids:
+          - "arrqp-radarr-voice-kurazh-bambey"  # Voice - Кураж-Бамбей
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-mosfilm-master"  # Voice - Мосфильм-Мастер
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9500
+      - trash_ids:
+          - "arrqp-radarr-voice-nevafilm"  # Voice - Невафильм
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9300
+      - trash_ids:
+          - "arrqp-radarr-voice-pifagor"  # Voice - Пифагор
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 9400
+      - trash_ids:
+          - "arrqp-radarr-voice-taykun"  # Voice - Тайкун
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 100
+      - trash_ids:
+          - "arrqp-radarr-voice-zakadry"  # Voice - заКадры
+        assign_scores_to:
+          - name: "Radarr 1080p RU"
+            score: 500

@@ -1,0 +1,11 @@
+# Merge into the Recyclarr settings.yml on the host.
+# Assumes the repository is cloned to /opt/arr-quality-policy.
+resource_providers:
+  - name: arr_quality_policy_radarr
+    type: custom-formats
+    path: /opt/arr-quality-policy/recyclarr/radarr/custom-formats
+    service: radarr
+  - name: arr_quality_policy_sonarr
+    type: custom-formats
+    path: /opt/arr-quality-policy/recyclarr/sonarr/custom-formats
+    service: sonarr

@@ -30,7 +30,7 @@ The profile update changed score assignments only; Recyclarr reported zero quali
 - The profile's quality structure matches the pre-Sync native backup. Thresholds remain MinFormatScore 0, CutoffFormatScore 0, MinUpgradeFormatScore 1, Upgrades Allowed true.
 - Key rules verified live: BDRip +120000; Remux +60000; Blu-ray Disk title -1000000; DVD Disk title -1000000; Dolby Vision +500; DV8.1 +3500.
 - Recyclarr debug log: 5 GET, 32 POST, 5 PUT, 0 DELETE; no error/fatal lines. PUTs represent four existing Custom Format updates and the profile score update.
-- Native backup remains available in Sonarr and in the project backup folder. SHA-256: `ea41126351730c9085241e9addb640549de79c5e3bd2d5796e602508f6d3cb17`.
+- A full native backup was created before Sync and retained locally outside Git. Backup archives and their checksums are intentionally not published in the repository; native Arr backups may contain API keys and integration credentials.
 - No Radarr Sync was run.
 
 ## Initial invocation

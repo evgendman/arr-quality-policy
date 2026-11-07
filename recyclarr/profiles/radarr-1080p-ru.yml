@@ -1,5 +1,6 @@
 # Recyclarr include fragment: Radarr 1080p RU.
 # Include this file under radarr.<instance_name>; it is not a standalone root config.
+# Quality groups are deliberately ordered from highest to lowest: 4K -> 1080p -> 720p -> SD.
 quality_profiles:
   - name: "Radarr 1080p RU"
     min_format_score: 0
@@ -10,52 +11,6 @@ quality_profiles:
       until_score: 0
     quality_sort: top
     qualities:
-      - name: Unknown
-        enabled: false
-      - name: WORKPRINT
-        enabled: false
-      - name: CAM
-        enabled: false
-      - name: TELESYNC
-        enabled: false
-      - name: TELECINE
-        enabled: false
-      - name: REGIONAL
-        enabled: false
-      - name: DVD-R
-        enabled: false
-      - name: BR-DISK
-        enabled: false
-      - name: DVDSCR
-        enabled: false
-      - name: Raw-HD
-        enabled: false
-      - name: SD
-        qualities:
-          - SDTV
-          - DVD
-          - Bluray-480p
-          - Bluray-576p
-      # Recyclarr applies the parent group's enabled state to every member.
-      # Live Radarr has these two inside SD but individually disallowed.
-      # They remain separate disabled items here to avoid enabling them on Sync.
-      - name: WEBDL-480p
-        enabled: false
-      - name: WEBRip-480p
-        enabled: false
-      - name: 720p
-        qualities:
-          - HDTV-720p
-          - WEBRip-720p
-          - WEBDL-720p
-          - Bluray-720p
-      - name: 1080p
-        qualities:
-          - Remux-1080p
-          - HDTV-1080p
-          - WEBRip-1080p
-          - WEBDL-1080p
-          - Bluray-1080p
       - name: 4K
         enabled: false
         qualities:
@@ -64,3 +19,49 @@ quality_profiles:
           - HDTV-2160p
           - Bluray-2160p
           - WEBDL-2160p
+      - name: 1080p
+        qualities:
+          - Remux-1080p
+          - HDTV-1080p
+          - WEBRip-1080p
+          - WEBDL-1080p
+          - Bluray-1080p
+      - name: 720p
+        qualities:
+          - HDTV-720p
+          - WEBRip-720p
+          - WEBDL-720p
+          - Bluray-720p
+      - name: SD
+        qualities:
+          - SDTV
+          - DVD
+          - Bluray-480p
+          - Bluray-576p
+      # Recyclarr 8.8.1 applies a group's enabled state to every member.
+      # Live Radarr keeps these two WEB 480p qualities disabled inside SD;
+      # they stay separate here so Sync cannot enable them accidentally.
+      - name: WEBDL-480p
+        enabled: false
+      - name: WEBRip-480p
+        enabled: false
+      - name: Raw-HD
+        enabled: false
+      - name: BR-DISK
+        enabled: false
+      - name: DVD-R
+        enabled: false
+      - name: DVDSCR
+        enabled: false
+      - name: REGIONAL
+        enabled: false
+      - name: TELECINE
+        enabled: false
+      - name: TELESYNC
+        enabled: false
+      - name: CAM
+        enabled: false
+      - name: WORKPRINT
+        enabled: false
+      - name: Unknown
+        enabled: false

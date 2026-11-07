@@ -35,11 +35,22 @@ tar -xzf sonarr-custom-formats-json.tar.gz -C /opt/arr-quality-policy/recyclarr/
 ## Конфигурации экземпляров
 
 - [Radarr YAML](../recyclarr/config/radarr.yml): `mini_radarr_1080p`, URL `http://127.0.0.1:7878`, профиль `Radarr 1080p RU`.
-- [Sonarr YAML](../recyclarr/config/sonarr.yml): `mini_sonarr_1080p`, URL `http://127.0.0.1:8989`, профиль `1080p RU`.
+- [Sonarr YAML](../recyclarr/config/sonarr.yml): `mini_sonarr_1080p`, URL `http://127.0.0.1:8989`, профиль `Sonarr 1080p RU` (переименован после Sync 2026-11-06).
 
 Loopback URL корректен, если Recyclarr запускается на том же хосте, что и Arr. При удалённом запуске нужен адрес, доступный с узла Recyclarr.
 
 В обоих YAML включено `delete_old_custom_formats: false`: неуправляемые форматы не удаляются автоматически. Примеры используют `!secret`, не реальные ключи.
+
+## Шаблоны Quality Profile
+
+Отдельные include-фрагменты фиксируют текущее устройство профилей:
+- [Radarr 1080p RU](../profiles/radarr-1080p-ru.yml)
+- [Sonarr 1080p RU](../profiles/sonarr-1080p-ru.yml)
+- [Правила повторного использования и ограничения Recyclarr](../profiles/README.md)
+
+Фрагменты пока не подключены к активным экземплярам: текущие Sync-конфигурации продолжают управлять Custom Formats. Подключение выполняется через `include` внутри блока нужного экземпляра. Это позволяет использовать сохранённый профиль как основу для отдельного 4K-экземпляра, не меняя текущие 1080p-профили автоматически.
+
+Профиль Sonarr переименован в **Sonarr 1080p RU**. В активном [Sonarr YAML](../config/sonarr.yml) назначения оценок Custom Formats обновлены на новое имя. Исторический отчёт Sync от 2026-11-06 сохраняет прежнее имя **1080p RU**, использовавшееся на момент синхронизации.
 
 ## API-ключи
 

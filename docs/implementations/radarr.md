@@ -12,6 +12,14 @@
 
 Текущая привязка каталога предназначена для профиля **Radarr 1080p RU**. Сами JSON-определения не ограничены разрешением.
 
+## Quality Profile 1080p RU
+
+Снимок структуры профиля сохранён в [Recyclarr include-фрагменте](../../recyclarr/profiles/radarr-1080p-ru.yml). В нём зафиксированы порядок `SD → 720p → 1080p → 4K`, состав групп, отключённые отдельные качества и cutoff `1080p`.
+
+Группа `4K` уже присутствует в профиле, но выключена. Это позволяет использовать сохранённый фрагмент как основу для отдельного 2160p-экземпляра.
+
+Ограничение Recyclarr 8.8.1: нельзя выключить отдельные качества внутри включённой группы. Поэтому `WEBDL-480p` и `WEBRip-480p` вынесены в шаблоне из `SD` в соседние самостоятельные пункты с `enabled: false`. В живом профиле они находятся внутри `SD` и выключены индивидуально. Остальные статусы и группы шаблона соответствуют сохранённой структуре.
+
 ## Как Radarr различает источники
 
 Radarr имеет отдельные Source и Quality Modifier, поэтому Blu-ray BDRip, Remux и BR-DISK можно классифицировать нативно.
@@ -32,6 +40,7 @@ BR-DISK и DVD-R не включены в текущий профиль каче
 
 - [JSON catalog Radarr — 56 отдельных JSON](../../recyclarr/catalogs/radarr-custom-formats-json.tar.gz)
 - [Recyclarr YAML Radarr](../../recyclarr/config/radarr.yml)
+- [Quality Profile Radarr 1080p RU](../../recyclarr/profiles/radarr-1080p-ru.yml)
 - [Общий settings.yml с providers](../../recyclarr/config/settings.yml)
 
 JSON архив содержит каталог `custom-formats/`, в котором хранится отдельный файл на каждый Custom Format. Provider Radarr должен указывать именно на этот каталог.

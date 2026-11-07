@@ -1,0 +1,49 @@
+# Recyclarr include fragment: Sonarr 1080p RU.
+# Include this file under sonarr.<instance_name>; it is not a standalone root config.
+quality_profiles:
+  - name: "Sonarr 1080p RU"
+    min_format_score: 0
+    min_upgrade_format_score: 1
+    upgrade:
+      allowed: true
+      until_quality: "1080p"
+      until_score: 0
+    quality_sort: top
+    qualities:
+      - name: Unknown
+        enabled: false
+      - name: DVD
+        enabled: false
+      - name: Raw-HD
+        enabled: false
+      - name: HDTV-2160p
+        enabled: false
+      - name: Bluray-2160p
+        enabled: false
+      - name: Bluray-2160p Remux
+        enabled: false
+      - name: WEB 2160p
+        enabled: false
+        qualities:
+          - WEBRip-2160p
+          - WEBDL-2160p
+      - name: SD
+        qualities:
+          - SDTV
+          - Bluray-480p
+          - Bluray-576p
+          - WEBRip-480p
+          - WEBDL-480p
+      - name: 720p
+        qualities:
+          - Bluray-720p
+          - WEBRip-720p
+          - WEBDL-720p
+          - HDTV-720p
+      - name: 1080p
+        qualities:
+          - Bluray-1080p Remux
+          - Bluray-1080p
+          - HDTV-1080p
+          - WEBRip-1080p
+          - WEBDL-1080p

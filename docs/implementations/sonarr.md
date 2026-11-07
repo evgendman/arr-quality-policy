@@ -10,7 +10,13 @@
 | Extra | 1 |
 | **Всего** | **55** |
 
-Оценки применены к профилю **1080p RU**.
+Оценки применены к профилю **Sonarr 1080p RU** (в момент первоначального Sync 2026-11-06 профиль ещё назывался `1080p RU`).
+
+## Quality Profile Sonarr 1080p RU
+
+Рабочий профиль переименован в **Sonarr 1080p RU**. Его упорядоченная структура и параметры cutoff сохранены в [Recyclarr include-фрагменте](../../recyclarr/profiles/sonarr-1080p-ru.yml).
+
+В отличие от Radarr, 2160p-часть профиля Sonarr не объединена в одну общую группу: `WEB 2160p` — отдельная выключенная группа, а `HDTV-2160p`, `Bluray-2160p` и `Bluray-2160p Remux` — самостоятельные выключенные качества. В шаблоне это устройство сохранено без создания новой группы.
 
 ## Почему условия источников Sonarr отличаются
 
@@ -33,6 +39,7 @@
 
 - [JSON catalog Sonarr — 55 отдельных JSON](../../recyclarr/catalogs/sonarr-custom-formats-json.tar.gz)
 - [Recyclarr YAML Sonarr](../../recyclarr/config/sonarr.yml)
+- [Quality Profile Sonarr 1080p RU](../../recyclarr/profiles/sonarr-1080p-ru.yml)
 - [Общий settings.yml с providers](../../recyclarr/config/settings.yml)
 
 Sonarr не получает Extra-Theatrical, поскольку этот признак относится к редакции фильма. Extra-HEVC / H.265 остаётся нейтральным.
